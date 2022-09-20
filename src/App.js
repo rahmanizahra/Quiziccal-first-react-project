@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
+import Secondpage from "./Secondpage";
+
 
 function App() {
+  const[isClicked,setIsclicked]=React.useState(false)
+
+  function showQuestion(){
+   setIsclicked (prevState => !prevState)}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="App">
+      <div className="first-page" style={{display : isClicked ? "none" : "block"}} >
+        <div className='yellow-holder'>
+         <img className="yellow-img"src='./2.png'></img>
+        </div>
+        <h1>Quizzical</h1>
+        <p>Please answer all questions</p>
+        <div className='button-holder'>
+         <button onClick={showQuestion} className='start-button'>Start Quiz</button>
+        </div>
+       <img className="green-img"src='./1.png'></img>
     </div>
+    
+    {isClicked && <Secondpage/>}
+   
+      
+      
+  </div>
   );
 }
 
