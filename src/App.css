@@ -9,16 +9,16 @@
         text-align: center;
     }
     
-    .first-page {
-        display: block;
-    }
-    
     .button-holder {
         text-align: center;
     }
     
     h1 {
         text-align: center;
+    }
+    
+    .title {
+        margin-top: 200px;
     }
     
     p {
@@ -37,34 +37,13 @@
         cursor: pointer;
     }
     
-    .yellow-img {
-        max-width: initial;
-        height: 235px;
-        margin-left: 20px;
-    }
-    
-    .yellow-holder {
-        max-width: 150px;
-        max-height: 235px;
-        overflow: hidden;
-        margin-left: 1500px;
-    }
-    
-    .green-img {
-        width: 297px;
-        height: 235px;
-        position: absolute;
-    }
-    
-    .question-holder {}
-    
     .answer-container {
         display: flex;
         justify-content: center;
     }
     
     .answer {
-        width: 240px;
+        width: 250px;
         height: 50px;
         border-radius: 15px;
         border: rgb(190, 188, 188) solid 1px;
