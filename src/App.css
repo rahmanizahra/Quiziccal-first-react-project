@@ -1,0 +1,54 @@
+    * {
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+    }
+    
+    body {
+        background-color: aliceblue;
+        text-align: center;
+    }
+    
+    .button-holder {
+        text-align: center;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .title {
+        margin-top: 200px;
+    }
+    
+    p {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .start-button {
+        width: 193px;
+        height: 52px;
+        border-radius: 15px;
+        border: none;
+        background-color: #4D5B9E;
+        color: aliceblue;
+        margin-top: 55px;
+        cursor: pointer;
+    }
+    
+    .answer-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .answer {
+        width: 250px;
+        height: 50px;
+        border-radius: 15px;
+        border: rgb(190, 188, 188) solid 1px;
+        text-align: center;
+        padding: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
