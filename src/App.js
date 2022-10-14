@@ -4,6 +4,7 @@ import Home from "./Home";
 import Quiz from "./Quiz";
 
 
+
 function App() {
   const[isHome,setIsHome]=React.useState(true)
 
@@ -22,8 +23,9 @@ function App() {
     toggleIsHome={toggleIsHome} 
     />
    }
-      
+    
   </div>
+  
   );
 }
 

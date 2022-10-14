@@ -1,7 +1,13 @@
 import React from "react";
 import { nanoid } from 'nanoid';
 import Question from "./Question";
+import blueBlob from './images/blueBlob.png';
+import yellowBlob from './images/yellowBlob.png';
+import SettingsIcons from "./SettingsIcons";
+
+
 export default function Quiz({toggleIsHome}){
+
  const [quizData,setQuizData] = React.useState([])
  const [isShowAnswers,setIsShowAnswers] = React.useState(false)
  const[resetQuiz,setResetQuiz] = React.useState(0)
@@ -103,12 +109,21 @@ const buttonElements = !isShowAnswers ?
     <div>
      <h3>One Moment Please</h3>
     </div>
-    :
+    :<>
+    <div className='settingsIconsQuiz'>
+      <SettingsIcons
+      toggleIsHome={toggleIsHome} 
+      />
+    </div>
     <div>
      {questionElements}
      {buttonElements}
     </div>
+    </>
+    
    }
+   <img className='yellowBlob' src={yellowBlob} alt='' />
+   <img className='blueBlob' src={blueBlob} alt='' />
  </div>
   </>
  )
